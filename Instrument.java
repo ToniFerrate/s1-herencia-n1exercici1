@@ -1,6 +1,6 @@
 package n1Exercici1;
 
-abstract class Instrument {
+class Instrument {
 	String nom;
 	int preu;
 	
@@ -11,5 +11,7 @@ abstract class Instrument {
 
 
 
-	//protected static void tocar();
+	public void tocar() {
+		System.out.println("Està sonant un instrument");
+	}
 }

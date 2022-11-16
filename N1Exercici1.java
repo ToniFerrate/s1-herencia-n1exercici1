@@ -18,9 +18,12 @@ public class N1Exercici1 {
 	public static void main(String[] args) {
 		
 		//Accés a un mètode estàtic. Només s'executa el bloc d'inicialització static abans que res
-		InstrumentVent.tocar();
+		InstrumentVent.tocar2();
 		
 		//Instanciació d'objectes. S'executen tant el bloc d'inicialització static com el bloc d'inicialització d'instància 
+		InstrumentVent instrument1 = new InstrumentVent("trompeta", 300);
+		instrument1.tocar();
+		
 		InstrumentCorda instrument2 = new InstrumentCorda("guitarra", 120);
 		instrument2.tocar();
 		

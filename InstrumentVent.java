@@ -16,8 +16,12 @@ public class InstrumentVent extends Instrument{
 		super(nom, preu);
 	}
 	
-
-	static void tocar() {
+	@Override
+	public void tocar() {
+		System.out.println("Està sonant un instrument de vent");
+	}
+	
+	public static void tocar2() {
 		System.out.println("Està sonant un instrument de vent");
 	}
 }
